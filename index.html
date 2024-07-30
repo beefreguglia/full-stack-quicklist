@@ -17,40 +17,30 @@
     <a href="#">
       <- Voltar 
     </a>
-    <form action="">
+    <form>
       <fieldset>
         <legend>Compras da semana</legend>
         <div class="flex">
           <div class="input-wrapper flex-1">
             <label class="sr-only" for="shopping">Adicione um novo item</label>
-            <input class="flex-1" name="shopping" type="text" placeholder="Adicione um novo item">
+            <input class="flex-1" id="shopping" name="shopping" type="text" placeholder="Adicione um novo item">
           </div>
           <button type="submit">Adicionar item</button>
         </div>
       </fieldset>
       <section id="shopping-list">
-        <div class="list-item">
-          <div class="checkbox-wrapper">
-            <div class="checkbox">
-              <img src="assets/icons/check.svg" class="check">
-            </div>
-            <input type="checkbox" name="shopping-item" id="shopping-item">
-            <label for="shopping-item">Pão de forma</label>
-          </div>
-          <img src="assets/icons/trash.svg" alt="Ícone de lixeira">
-        </div>
-        <div class="list-item">
-          <div class="checkbox-wrapper">
-            <div class="checkbox">
-              <img src="assets/icons/check.svg" class="check">
-            </div>
-            <input type="checkbox" name="shopping-item" id="shopping-item">
-            <label for="shopping-item">Pão de forma</label>
-          </div>
-          <img src="assets/icons/trash.svg" alt="Ícone de lixeira">
-        </div>
+        
       </section>
     </form>
+    <footer class="hide">
+      <div>
+        <img src="assets/icons/info.svg" alt="Info icon">
+        <p></p>
+      </div>
+      <button type="button">
+        <img src="assets/icons/close.svg" alt="Close icon">
+      </button>
+    </footer>
   </main>
   <script src="scripts.js"></script>
 </body>
