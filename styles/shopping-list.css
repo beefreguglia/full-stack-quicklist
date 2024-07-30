@@ -1,15 +1,24 @@
 #shopping-list {
-  margin-top: 2.5rem;
+  margin: 2.5rem 0 2.25rem;
   display: flex;
   flex-direction: column;
   gap: .75rem;
-
+  
   & .list-item {
+    animation: listItemAppear 300ms ease-in;
     display: flex;
     align-items: center;
     padding: .75rem;
     border-radius: .5rem;
     background-color: var(--background-secondary);
+
+    & > button {
+      all: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
   }
 }
 
@@ -18,5 +27,17 @@
     & .list-item {
       padding: .5rem .75rem;
     }
+  }
+}
+
+@keyframes listItemAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
