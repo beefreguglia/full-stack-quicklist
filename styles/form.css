@@ -7,9 +7,5 @@ form {
       color: var(--content-primary);
       margin-bottom: 2.75rem;
     }
-    
-    & .input-wrapper {
-      display: flex;
-    }
   }
 }

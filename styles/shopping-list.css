@@ -1,0 +1,22 @@
+#shopping-list {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+
+  & .list-item {
+    display: flex;
+    align-items: center;
+    padding: .75rem;
+    border-radius: .5rem;
+    background-color: var(--background-secondary);
+  }
+}
+
+@media (width >= 80em) {
+  #shopping-list {
+    & .list-item {
+      padding: .5rem .75rem;
+    }
+  }
+}
