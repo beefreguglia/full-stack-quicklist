@@ -1,10 +1,15 @@
 form {
   & > fieldset {
     margin-top: 1rem;
-    
+
     & > legend {
       font: var(--title);
       color: var(--content-primary);
+      margin-bottom: 2.75rem;
+    }
+    
+    & .input-wrapper {
+      display: flex;
     }
   }
 }
